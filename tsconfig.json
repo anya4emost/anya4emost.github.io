@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "ES6",
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "allowJs": true
+  },
+  "include": [
+    "./client/**/*.*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
