@@ -1,13 +1,10 @@
 import * as React from "react";
 import {observer} from "mobx-react";
-import {observable} from "mobx";
 import * as cx from "classnames";
 
 @observer
 export class Screen extends React.Component {
-    @observable input1;
-    @observable input2;
-    @observable input3;
+
     state = {
         firstNumberCorrect: false,
         secondNumberCorrect: false,
@@ -20,37 +17,31 @@ export class Screen extends React.Component {
         input3: ""
     };
 
-    inputOnChange1 = () => {
-        const value = this.input1.value.substr(-1, 1);
+    inputOnChange1 = (event) => {
+        const value = event.target.value.substr(-1, 1);
         this.setState({input1: value}, () => {
-            if (Number(this.state.input1) == this.state.numberA) {
-                this.setState({firstNumberCorrect: true})
+            if (this.state.input1 == this.state.numberA) {
+                this.setState({firstNumberCorrect: true});
             }
         })
     };
-    inputOnChange2 = () => {
-        const value = this.input2.value.substr(-1, 1);
+    inputOnChange2 = (event) => {
+        const value =  event.target.value.substr(-1, 1);
         this.setState({input2: value}, () => {
-            if (Number(this.state.input2) == this.state.numberB) {
-                this.setState({secondNumberCorrect: true}, () => {
-                    this.input1.autofocus = false;
-                    this.input2.autofocus = true;
-                });
-
+            if (this.state.input2 == this.state.numberB) {
+                this.setState({secondNumberCorrect: true});
             }
         })
     };
-    inputOnChange3 = () => {
-        this.setState({input3: this.input3.value}, () => {
-            console.log(this.state.input3, this.state.numberC);
-            if (Number(this.state.input3) == this.state.numberC) {
+    inputOnChange3 = (event) => {
+        this.setState({input3: event.target.value}, () => {
+            if (this.state.input3 == this.state.numberC) {
                 this.setState({issueCorrect: true});
-                this.input3.autofocus = true;
             }
         })
     };
     randomInteger = (min, max) => {
-        var rand = min + Math.random() * (max + 1 - min);
+        let rand = min + Math.random() * (max + 1 - min);
         rand = Math.floor(rand);
         return rand;
     };
@@ -60,10 +51,6 @@ export class Screen extends React.Component {
         const c = this.randomInteger(11, 14);
         const b = c - a;
         this.setState({numberA: a, numberB: b, numberC: c})
-    }
-
-    componentDidMount() {
-        this.input1.autofocus = true;
     }
 
     render() {
@@ -100,10 +87,8 @@ export class Screen extends React.Component {
                             <input
                                 type="number"
                                 value={input3}
+                                autoFocus
                                 className={inputCClasses}
-                                ref={(input) => {
-                                    this.input3 = input;
-                                }}
                                 onChange={this.inputOnChange3}/>
                         </div>
                     </If>
@@ -117,10 +102,8 @@ export class Screen extends React.Component {
                                     <input
                                         type="number"
                                         value={input1}
+                                        autoFocus
                                         className={inputAClasses}
-                                        ref={(input) => {
-                                            this.input1 = input;
-                                        }}
                                         onChange={this.inputOnChange1}/>
                                 </div>
                             </If>
@@ -140,9 +123,7 @@ export class Screen extends React.Component {
                                         <input type="number"
                                                value={input2}
                                                className={inputBClasses}
-                                               ref={(input) => {
-                                                   this.input2 = input;
-                                               }}
+                                               autoFocus
                                                onChange={this.inputOnChange2}/>
                                     </div>
                                 </If>

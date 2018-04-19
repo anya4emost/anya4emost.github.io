@@ -4,7 +4,6 @@
     <list default="true" id="493d3742-f403-4601-85a5-0a4edd65d794" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/client/views/ScreenComponent.tsx" afterPath="$PROJECT_DIR$/client/views/ScreenComponent.tsx" />
-      <change beforePath="$PROJECT_DIR$/client/views/style.scss" afterPath="$PROJECT_DIR$/client/views/style.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +16,7 @@
     <favorites_list name="alphabet" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6542578">
+    <splitter split-orientation="horizontal" split-proportion="0.8029607">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="routes.tsx" pinned="false" current-in-tab="false">
@@ -33,10 +32,8 @@
           <file leaf-file-name="ScreenComponent.tsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/ScreenComponent.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2492">
-                  <caret line="106" column="64" lean-forward="true" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
-                  <caret line="107" column="30" lean-forward="true" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
-                  <caret line="108" column="25" lean-forward="true" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+                <state relative-caret-position="550">
+                  <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -164,9 +161,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
-    <option name="y" value="8" />
-    <option name="width" value="2616" />
-    <option name="height" value="2038" />
+    <option name="width" value="2427" />
+    <option name="height" value="2110" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -333,7 +329,7 @@
       <workItem from="1511280537960" duration="552000" />
       <workItem from="1512232331580" duration="558000" />
       <workItem from="1513277233357" duration="406000" />
-      <workItem from="1524047217878" duration="33789000" />
+      <workItem from="1524047217878" duration="35819000" />
     </task>
     <task id="LOCAL-00001" summary="sound + transition to pictures">
       <created>1505914400358</created>
@@ -524,24 +520,31 @@
       <option name="project" value="LOCAL" />
       <updated>1524141952124</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="autofocus">
+      <created>1524146301523</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1524146301523</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102391000" />
+    <option name="totallyTimeSpent" value="104421000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="8" width="2616" height="2038" extended-state="0" />
+    <frame x="-9" y="0" width="2427" height="2110" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3186583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22695035" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1485737" sideWeight="0.3676782" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.015748031" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16059957" sideWeight="0.36693335" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13747954" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285568" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1485737" sideWeight="0.63232183" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16059957" sideWeight="0.63306665" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -578,7 +581,8 @@
     <MESSAGE value="exact-" />
     <MESSAGE value="mobX - stack overflow" />
     <MESSAGE value="firstInput done" />
-    <option name="LAST_COMMIT_MESSAGE" value="firstInput done" />
+    <MESSAGE value="autofocus" />
+    <option name="LAST_COMMIT_MESSAGE" value="autofocus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -926,10 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/ScreenComponent.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2492">
-          <caret line="106" column="64" lean-forward="true" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
-          <caret line="107" column="30" lean-forward="true" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
-          <caret line="108" column="25" lean-forward="true" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+        <state relative-caret-position="550">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
