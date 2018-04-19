@@ -17,7 +17,7 @@ body {
           font-size: 24px;
         }
       }
-      .pictures {
+      .rules_with_arcs {
         width: 600px;
         align-self: center;
         > div {
@@ -68,11 +68,11 @@ body {
         font-size: 16px;
         height: 16px;
         text-align: center;
-        &.red{
+        &.red {
           color: red;
         }
       }
-      .yellow{
+      .yellow {
         background-color: yellow;
       }
       textarea:focus, input:focus {
@@ -90,13 +90,24 @@ body {
         height: 22px;
         box-sizing: border-box;
         margin-bottom: 4px;
+        width: 20px;
       }
-      .border{
+      .issueInput {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 28px;
+        box-sizing: border-box;
+        width: 36px;
+        input {
+          width: 30px;
+          font-size: 22px;
+          height: 22px;
+        }
+      }
+      .border {
         border-radius: 4px;
         border: 1px solid lightgrey;
-      }
-      .inputA, .inputB {
-        width: 20px;
       }
     }
   }
