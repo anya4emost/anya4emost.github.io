@@ -1,56 +1,101 @@
 body {
 
-    .whole {
-        width: 100vw;
-        text-align: center;
-        .display {
-            width: 100%;
-            height: 100%;
-            display: inline-block;
-
-            .red {
-                color: red;
-            }
-            .blue {
-                color: blue;
-            }
-
-            > div {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 4px;
-                box-shadow: -2px 4px 24px 2px rgba(0, 0, 0, 0.5);
-                padding: 0 8px;
-                margin: 3%;
-                width: 170px;
-                height: 125px;
-
-                span {
-                    align-self: flex-start;
-                    font-size: 48px;
-                    margin-right: 8px;
-                }
-
-                img {
-                    width: 120px;
-                }
-
-            }
-
-        }
-    }
-    .pictures {
+  .whole {
+    width: 100vw;
+    text-align: center;
+    .card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .task {
         display: flex;
         justify-content: center;
+        > div {
+          padding: 4px;
+          font-size: 24px;
+        }
+      }
+      .pictures {
+        width: 600px;
+        align-self: center;
+        > div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      .arc {
+        width: 100px;
+        height: auto;
+        border-radius: 100px 100px 0 0;
+        border-top: 1.5px solid red;
+        border-left: 1.5px solid red;
+        border-right: 1.5px solid red;
+      }
+      .arcA {
+        margin-left: 24px;
+      }
+      .arcA, .arcB {
+        position: relative;
+      }
+      .arrow {
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-top-color: red;
+        margin: 0;
+        padding: 0;
+        float: left;
+        position: absolute;
+        bottom: 20px;
+        right: -3px;
+      }
+      .arrow.down {
+        transform: rotate(0deg) translate(0px, 25px);
+        -webkit-transform: rotate(0deg) translate(0px, 25px);
+        -moz-transform: rotate(0deg) translate(0px, 25px);
+        -o-transform: rotate(0deg) translate(0px, 25px);
+        -ms-transform: rotate(0deg) translate(0px, 25px);
+      }
+      input {
+        border: none;
+        width: 16px;
+        font-size: 16px;
+        height: 16px;
+        text-align: center;
+        &.red{
+          color: red;
+        }
+      }
+      .yellow{
+        background-color: yellow;
+      }
+      textarea:focus, input:focus {
+        outline: none;
+      }
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .input {
+        display: flex;
         align-items: center;
-
-        img:not(.arrow) {
-            height: 100vh;
-        }
-        .arrow{
-            margin-right: 16px;
-            width: 72px;
-        }
+        justify-content: center;
+        border-radius: 4px;
+        height: 22px;
+        box-sizing: border-box;
+        border: 1px solid lightgrey;
+        margin-bottom: 4px;
+      }
+      .inputA, .inputB {
+        width: 20px;
+      }
     }
+  }
 }
