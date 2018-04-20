@@ -19,7 +19,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --hot --inline",
-    "prod": "NODE_ENV=production webpack",
+    "prod": "webpack",
     "githubPages": "NODE_ENV=githubPages webpack"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
