@@ -1,5 +1,5 @@
 {
-  "name": "alphabet",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -52,6 +52,6 @@
     "webpack-dev-server": "^2.7.1",
     "webpack-merge": "^4.1.0"
   },
-  "author": "",
+  "author": "Anna Mikhaylova",
   "license": "ISC"
 }

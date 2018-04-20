@@ -26,7 +26,7 @@ export class Screen extends React.Component {
         })
     };
     inputOnChange2 = (event) => {
-        const value =  event.target.value.substr(-1, 1);
+        const value = event.target.value.substr(-1, 1);
         this.setState({input2: value}, () => {
             if (this.state.input2 == this.state.numberB) {
                 this.setState({secondNumberCorrect: true});
@@ -37,6 +37,9 @@ export class Screen extends React.Component {
         this.setState({input3: event.target.value}, () => {
             if (this.state.input3 == this.state.numberC) {
                 this.setState({issueCorrect: true});
+                setTimeout(function () {
+                    window.location.reload();
+                }, 2000);
             }
         })
     };
@@ -82,7 +85,7 @@ export class Screen extends React.Component {
                         <div className="c">?</div>
                     </If>
 
-                    <If condition={secondNumberCorrect}>
+                    <If condition={secondNumberCorrect && !issueCorrect}>
                         <div className="issueInput border">
                             <input
                                 type="number"
@@ -92,6 +95,12 @@ export class Screen extends React.Component {
                                 onChange={this.inputOnChange3}/>
                         </div>
                     </If>
+                    <If condition={issueCorrect}>
+                        <div className="c">
+                            {numberC}
+                        </div>
+                    </If>
+
 
                 </div>
                 <div className="rules_with_arcs">
@@ -129,7 +138,9 @@ export class Screen extends React.Component {
                                 </If>
                                 <If condition={secondNumberCorrect}>
                                     <div className="input"
-                                         style={{marginLeft: `${13.13 * numberB - 8}px`}}>{numberB}</div>
+                                         style={{marginLeft: `${13.13 * numberB - 8}px`}}>
+                                        {numberB}
+                                    </div>
                                 </If>
                                 <div className="arc" style={{
                                     width: `${26.26 * numberB}px`,

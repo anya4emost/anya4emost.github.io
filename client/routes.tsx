@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {Switch} from "react-router";
-import Alphabet from "./views/alphabet";
-import {Letter} from "./views/LetterComponent";
+import {Screen} from "./views/ScreenComponent";
 
 export default class Routes extends React.Component<{}, {}> {
 
@@ -10,8 +9,7 @@ export default class Routes extends React.Component<{}, {}> {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route path={`/letter/:letter`} component={Letter}/>
-                    <Route exact path={`/`} component={Alphabet}/>
+                    <Route exact path={`/`} component={Screen}/>
                 </Switch>
             </BrowserRouter>
         )
